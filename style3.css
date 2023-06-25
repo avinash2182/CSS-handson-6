@@ -2,37 +2,151 @@ body
 {
     border: 15px solid;
     border-color: white green white orange;
+   
 }
 .sky
 {
     background-image: url(./sky.jpg);
-    height: 100vh;
+    height: 94vh;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow-x: hidden;
+    
 }
-.car
+.sun img
+{
+   width: 100px;
+   /* height: 100px; */
+  
+}
+.sun{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    animation: sunn 9s infinite linear;
+}
+@keyframes sunn 
+{
+    100%
+    {
+        transform: translate(-400px);
+    }
+}
+.topText
+{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    column-gap: 15px;
+    font-weight: 50px;
+
+}
+ .text1
+ {
+    background-color: orange;
+ }
+ .text2
+ {
+    background-color: white;
+ }
+ .text3
+ {
+    background-color: green;
+ }
+ .car img{
+    width: 100%;
+
+ }
+.car 
 {
     /* background-image: url(./car.png); */
+    /* border: 2px solid ; */
     position: absolute;
-    bottom: 200px;
+    bottom: 150px;
     left: 20%;
     z-index: 5;
-    width: 100px;
-    height: 200px;
+    width: 500px;
+    animation: car1 3px infinite linear;
+    /* height: 200px; */
     /* overflow-y: hidden; */
 }
+@keyframes car1
+{
+    100%
+    {
+        transform: translatey(-2px);
+    }
+    50%{
+       transform: translatey(3px);    
+    }
+    0%
+    {
+        transform: translate(-2px);
+    }
+}
+.wheel
+{   
+    /* height: 80px;
+    width: 80px; */
+    position: absolute;
+    z-index: 6;
+    bottom: 158px;
+    width: 90px;
+    left: 23%;
+    animation: wheel1 3s infinite linear; 
+}
+@keyframes wheel1
+{
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
+/* .wheel wheel2
+{
+    position: relative;
+    bottom: 100px;
+} */
+.wheel2
+{   
+    /* height: 80px;
+    width: 80px; */
+    position: absolute;
+    z-index: 6;
+    bottom: 158px;
+    width: 90px;
+    left: 43.5%;
+}
+
 .city
 {
     background-image: url(./city.png);
+    position: absolute;
+    top: 250px;
+    z-index: 4;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 500%;
+    height: 235px;
+    animation: cityy 10s infinite linear;
+    
 
+}
+/* img{
+} */
+@keyframes cityy
+{
+    100%
+    {
+        transform: translate(-300px);
+    }
 }
 .road
 {   
     background-image: url(./road.jpg);
     width: 500%;
-    height: 200px;
+    height: 225px;
     position: absolute;
     z-index: 2;
     bottom: 0px;
@@ -44,4 +158,14 @@ body
     {
         transform: translatex(-3000px);
     }
+}
+.flage
+{
+    /* background-image: url(./flag.png); */
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 42%;
+    top: 48%;
+    z-index: 3;
 }

@@ -37,24 +37,24 @@ a
 }
 .box3:hover
 {
-    width: 300px;
+    width: 400px;
     transition-duration: 3s;
 }
 .box4:hover{
-    width: 300px;
+    width: 400px;
     transition-duration: 4s;
 }
 .box5:hover
 {
-    width: 300px;
+    width: 400px;
     transition-duration: 4s;
 }
 .box6:hover{
-    width: 300px;
+    width: 400px;
     transition-duration: 4s;
 }
 .box7:hover
 {
-    width: 300px;
+    width: 400px;
     transition-duration: 4s;
 }
